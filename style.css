@@ -1,0 +1,66 @@
+body{
+    background-color: #0E0E0E;
+    color: white;
+    margin: 0px;
+}
+
+.Part1 img{
+    width: 60%;
+}
+
+
+.Part2 img{
+    width: 10%;
+}
+
+.ImagesP2 img{
+    width: 35%;
+}
+
+.Part3 img{
+    width: 75%;
+}
+
+.ImagesP3 img{
+    width: 270px;
+}
+
+/* hamburger starts here */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a.icon {
+    float: right;
+    font-size: 20px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.main{
+    padding-top: 35px;
+}

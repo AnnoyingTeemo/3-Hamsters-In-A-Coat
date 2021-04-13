@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href="style.css">
+<script src="jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="topnav">
+  <div id="myLinks">
+    <a href="#part_1">Part One</a>
+    <a href="#part_2">Part Two</a>
+    <a href="#part_3">Part Three</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="main">
+<h1>COMP501 Computing Technology in Society</h1>
+<hr/>
+<h2>Assignment 1: ICT Fundamentals</h2>
+<ul>
+  <li>Full name: Michael James Bachler Wighton</li>
+  <li>ID: 20114645</li>
+  <li>Email: wxy4396@aut.ac.nz</li>
+</ul>
+<hr/>
+<!-- <h3>Assignment Selection Menu:</h3>
+<ol>
+  <li><a href="#part_1">Part One</a></li>
+  <li><a href="#part_2">Part Two</a></li>
+  <li><a href="#part_3">Part Three</a></li>
+</ol> -->
+
+<div class="Part1">
+<hr/>
+<h2><a id="part_1">Part One </h2>
+  <p>Put all your answers below</p>
+  <img src="images/question1.jpg">
+  <hr/>
+</div>
+
+<div class="Part2">
+<h2><a id="part_2">Part Two </h2>
+<p>Put all your answers below</p>
+<img src="images/linux.jpg">
+<div id="ImagesPart2" class="ImagesP2"></div>
+<hr/>
+</div>
+
+<div class="Part3">
+<h2><a id="part_3">Part Three </h2>
+<p>The answers are below</p>
+<div id="ImagesPart3" class="ImagesP3">
+<!--<table>
+  <tr>
+    <th>Images</th>
+    <th>Performance (%)</th>
+  </tr>
+  <tr>
+    <td><img src="images/sample1.jpg"></td>
+    <td>100%</td>
+  </tr>
+  <tr>
+    <td><img src="images/sample2.jpg"></td>
+    <td>100%</td>
+  </tr>
+</table>-->
+</div>
+<hr/>
+
+
+<!-- <iframe width="640" height="480" src="https://www.youtube.com/embed/_tOpAhm65WU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/dEUDZBEwIXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<video controls><source src="images/part3images/Video1.mp4" type="video/mp4"></video>
+<video controls><source src="images/part3images/yolo_faster/Video1.mp4" type="video/mp4"></video>
+</div><!--test-->
+</div>
+</body>
+</html>
+<script src="img.js"></script>
+<script src="img2.js"></script>
+
+<script>
+  function hamburger() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
