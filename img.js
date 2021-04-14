@@ -33,8 +33,10 @@ function fExists() {
     imgArray.push(img);
     i++;
     bCheckEnabled = true;
+
+    var code = '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="'+ img.src +'" itemprop="contentUrl" data-size="1024x1024"><img src="'+ img.src +'" itemprop="thumbnail" alt="Image description" /></a></figure>'
 		
-var code = '<img src="'+ img.src +'">'
+    // var code = '<img src="'+ img.src +'">'
     console.log(code)
 	div.insertAdjacentHTML('beforeend', code)
 	

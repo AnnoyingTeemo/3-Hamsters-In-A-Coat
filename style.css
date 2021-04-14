@@ -64,3 +64,21 @@ body{
 .main{
     padding-top: 35px;
 }
+
+
+/* ZOOM Galery */
+.my-gallery {
+    width: 100%;
+    float: left;
+}
+.my-gallery img {
+    width: 100%;
+    height: auto;
+}
+.my-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 150px;
+    height: 150px;
+}
