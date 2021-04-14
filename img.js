@@ -25,6 +25,7 @@ function loadImage() {
         img.onload = fExists;
         img.onerror = fDoesntExist;
         img.src = 'images/part2images/' + i + '.png';
+        
     }
 
 }
@@ -34,8 +35,8 @@ function fExists() {
     i++;
     bCheckEnabled = true;
 
-    var code = '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="'+ img.src +'" itemprop="contentUrl" data-size="1024x1024"><img src="'+ img.src +'" itemprop="thumbnail" alt="Image description" /></a></figure>'
-		
+    var code = '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="'+ img.src +'" itemprop="contentUrl" data-size="'+ img.width +'x'+ img.height +'"><img src="'+ img.src +'" itemprop="thumbnail" alt="Image description" /></a></figure>'
+	// console.log(img.width)
     // var code = '<img src="'+ img.src +'">'
     console.log(code)
 	div.insertAdjacentHTML('beforeend', code)
