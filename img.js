@@ -38,7 +38,7 @@ function fExists() {
     var code = '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="'+ img.src +'" itemprop="contentUrl" data-size="'+ img.width +'x'+ img.height +'"><img src="'+ img.src +'" itemprop="thumbnail" alt="Image description" /></a></figure>'
 	// console.log(img.width)
     // var code = '<img src="'+ img.src +'">'
-    console.log(code)
+    // console.log(code)
 	div.insertAdjacentHTML('beforeend', code)
 	
 }
