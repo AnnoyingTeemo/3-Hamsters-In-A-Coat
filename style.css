@@ -35,7 +35,8 @@ body{
 }
   
 .topnav #myLinks {
-    display: none;
+    /* display: none; */
+    display: block;
 }
   
 .topnav a {

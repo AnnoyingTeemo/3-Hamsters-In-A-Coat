@@ -8,7 +8,7 @@ var imgArrayP3 = new Array();
 var iP3 = 1;
 //var chanceArrayP3 = [0,76,0,0,65,42,37,0,30,70,0,35,54,0,52,52,76]
 var chanceArrayP3 = [0,100,0,0,100,100,100,0,100,100,0,66,50,0,100,0,100,100]
-var chanceArrayP3fast = [0,100,0,0,100,100,100,0,100,100,0,66,50,0,100,0,100,100]
+var chanceArrayP3fast = [0,100,0,0,0,0,0,0,0,0,0,50,0,0,100,0,100,100]
 console.log(chanceArrayP3)
 var codeP3 = '';
 
