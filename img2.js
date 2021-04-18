@@ -29,10 +29,12 @@ function loadImageP3() {
 		
         imgP3 = new Image();
         imgP3fast = new Image();
+        imgP3orig = new Image();
         imgP3.onload = fExistsP3;
         imgP3.onerror = fDoesntExistP3;
         imgP3.src = 'images/part3images/yolo_minimal_work/' + iP3 + '.jpg';
         imgP3fast.src = 'images/part3images/yolo_faster/' + iP3 + '.jpg';
+        imgP3orig.src = 'images/part3images/origionals/' + iP3 + '.jpg';
     }
 
 }
@@ -43,7 +45,7 @@ function fExistsP3() {
     bCheckEnabledP3 = true;
 		
 //var codeP3 = '<img src="'+ imgP3.src +'">'
-var codeimg = '<tr><td><img src="'+ imgP3.src +'"></td><td>'+ chanceArrayP3[iP3-2] +'%</td><td><img src="'+ imgP3fast.src +'"></td><td>'+ chanceArrayP3fast[iP3-2] +'%</td></tr>'
+var codeimg = '<tr><td><img src="'+ imgP3orig.src +'"></td><td><img src="'+ imgP3.src +'"></td><td>'+ chanceArrayP3[iP3-2] +'%</td><td><img src="'+ imgP3fast.src +'"></td><td>'+ chanceArrayP3fast[iP3-2] +'%</td></tr>'
 	//divP3.insertAdjacentHTML('beforeend', codeP3)
     codeP3 = codeP3 + codeimg
 }
@@ -54,7 +56,7 @@ function fDoesntExistP3() {
 
 
 function startTable(){
-    var startTableCode = '<table><tr><th>Images</th><th>Performance (%)</th></tr>'
+    var startTableCode = '<table><tr><th>Original Image</th><th>Images</th><th>Performance (%)</th><th>Images</th><th>Performance (%)</th></tr>'
     codeP3 = codeP3 + startTableCode
     
     
